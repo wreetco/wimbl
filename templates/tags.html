@@ -1,0 +1,14 @@
+<ion-view view-title="{{user.handle}}'s tags" ng-init="setup()">
+  <ion-content>
+		<div class="tags">
+			<div ng-repeat="tag in user.tags" class="{{$odd ? 'right' : 'left';}} {{$index == 0 || 1 ? 'top' : ''}}">
+				<input type="checkbox" ng-model="true" />
+				{{ tag.tag }}
+				<br ng-show="$odd" />
+			</div>
+		</div>
+		<div style="text-align: center;">
+			<button class="submit">save</button>
+		</div>
+  </ion-content>
+</ion-view>

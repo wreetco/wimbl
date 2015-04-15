@@ -1,0 +1,26 @@
+<ion-view view-title="{{ deal.title }}" ng-init="setDeal()">
+  <ion-content>
+		<div class="locations_map" id="map">
+			map placeholder
+		</div>
+		<table class="deal_details">
+			<tr>
+				<td><span class="bold">Where</span></td>
+			</tr>
+			<tr class="detail">
+				<td>
+					{{ deal.business }}
+				</td>
+			</tr>
+			<tr height="10"></tr>
+			<tr>
+				<td><span class="bold">About</span></td>
+			</tr>
+			<tr class="detail">
+				<td>
+					{{ deal.description }}
+				</td>
+			</tr>
+		</table>
+  </ion-content>
+</ion-view>

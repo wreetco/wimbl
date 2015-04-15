@@ -1,0 +1,89 @@
+/* Empty. Add your own CSS if you like */
+
+html, body {
+	
+}
+ 
+.bar-header {
+	background-color: #aad874 !important;
+	//box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+.button {	
+	color: #31270E !important;
+}
+
+.title {
+	color: #31270E !important;	
+}
+
+.deal_details {
+	width: 95vw;
+	border-collapse: collapse;
+	margin: 10px auto;
+	//border: 1px solid red !important;
+}
+
+.deal_details, .deal_details p {
+	color: #31270E !important;
+}
+
+.deal_details td {
+}
+
+.detail td {
+	padding: 5px;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.locations_map {
+	height: 50vh;
+	line-height: 50vh;
+	text-align: center;
+}
+
+.tag_tools {
+	height: 10vh;
+	//border: 1px solid red;
+	
+}
+
+.tags {
+	width: 95vw;
+	margin: 0 auto;
+	padding: 15px;
+	font-size: 20px;
+	font-weight: bold;
+	color: #31270E;
+	margin-top: -15px;
+}
+
+
+.tags div {
+	display: inline-block;
+	//border: 1px solid red;
+	width: 50%;
+	padding: 15px;
+}
+
+button.submit {
+	font-size: 24pt;
+	padding: 0px 40px 0px 40px;
+	background-color: #fff;
+	border: 2px solid #aad874;
+	border-radius: 50px;
+	font-weight: lighter;
+}
+
+button.submit:hover {
+	background-color: #aad874;
+}
+
+
+
+
+
+
