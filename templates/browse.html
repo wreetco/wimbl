@@ -1,5 +1,14 @@
-<ion-view view-title="Browse">
-  <ion-content>
-    <h1>Browse</h1>
+<ion-view view-title="Nearby Deals" ng-init="getDeals()">
+  <ion-content class="page">
+    <div class="filters row">
+			<div class="col">
+				<i class="ion-android-arrow-dropdown"></i> All deals - Denver, CO
+			</div>
+		</div>
+		
+		<div class="deal_container list card" ng-repeat="deal in deals" ng-include src="'templates/_deal.html'">
+			<!-- deals rendered here -->
+		</div>
+		
   </ion-content>
 </ion-view>

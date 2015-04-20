@@ -1,9 +1,14 @@
 <ion-view view-title="Deals">
-  <ion-content>
-    <ion-list>
-      <ion-item ng-repeat="deal in deals" href="#/app/deals/{{deal.id}}">
-        {{deal.title}}
-      </ion-item>
-    </ion-list>
+  <ion-content class="page">
+	<div class="deal_container list card" ng-repeat="deal in deals" ng-include src="'templates/_deal.html'">
+		<!-- deals rendered here -->
+	</div>
   </ion-content>
+		<div class="row new_deal_button">
+			<div class="col button_content">
+				<a href="/#/app/deals/add">
+					<i class="icon ion-plus positive" style="font-size: 2em; color: #fff;"></i>
+				</a>
+			</div>
+		</div>
 </ion-view>

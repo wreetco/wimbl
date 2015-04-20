@@ -12,12 +12,10 @@ angular.module('starter.controllers', [])
 			},
 			{ 
 				title: 'Two for one beer', 
+				business: 'The Bar',
+				description: 'The bar is serving two for one beers all week long.',
 				id: 2 
 			},
-			{ title: 'Free show', id: 3 },
-			{ title: '$2 off coffee', id: 4 },
-			{ title: 'Free slice', id: 5 },
-			{ title: 'Bottomless mimosas', id: 6 }
   	]
 	}
 }) // end deals service
@@ -129,9 +127,30 @@ angular.module('starter.controllers', [])
 	$scope.setup = function() {
 		$scope.user = UserService.user;	
 	} // end setup method
-}) // enf tags controller
+}) // end tags controller
+
+.controller('BrowseCtrl', function($scope, DealsService) {
+	$scope.deals = {};
+	$scope.getDeals = function() {
+		$scope.deals = DealsService.deals;
+	}
+	$scope.searchDeals = function(query) {
+		
+	} // end searchDeals method
+	
+}) // end browse controller
 
 ; // end app
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,9 +1,12 @@
 /* Empty. Add your own CSS if you like */
 
 html, body {
-	
 }
- 
+
+.page {
+	background-color: rgba(255, 255, 0, .1);
+}
+
 .bar-header {
 	background-color: #aad874 !important;
 	//box-shadow: 0px 5px 10px 0px rgba(50, 50, 50, 0.75);
@@ -11,6 +14,23 @@ html, body {
 
 .button {	
 	color: #31270E !important;
+}
+
+.new_deal_button {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	right: 10vw;
+	bottom: 5vh;
+	z-index: 100;
+	border-radius: 50%;
+	background-color: #aad874;
+
+	box-shadow: 0 0 10px 3px #888;
+}
+
+.button_content {
+	text-align: center;
 }
 
 .title {
@@ -45,28 +65,32 @@ html, body {
 	text-align: center;
 }
 
-.tag_tools {
-	height: 10vh;
-	//border: 1px solid red;
-	
+.tag_search {
+	margin: 0; 
+	padding: 0; 
+	border: 0;
 }
 
-.tags {
-	width: 95vw;
-	margin: 0 auto;
-	padding: 15px;
-	font-size: 20px;
+.deal_li {
+	height: 20vh;
+}
+
+.tags li {
+	background-color: transparent;
+}
+
+.tag_title {
+	color: #31270E !important;
 	font-weight: bold;
-	color: #31270E;
-	margin-top: -15px;
 }
 
+.checkbox input:checked:before, .checkbox input:checked + .checkbox-icon:before {
+	background: #aad874;
+	border: 1px solid #aad874;
+}
 
-.tags div {
-	display: inline-block;
-	//border: 1px solid red;
-	width: 50%;
-	padding: 15px;
+.radio-icon:before, .ion-checkmark:before {
+	color: #aad874 !important;
 }
 
 button.submit {
@@ -82,8 +106,19 @@ button.submit:hover {
 	background-color: #aad874;
 }
 
+.save_deal {
+	background-color: #aad874 !important;
+}
 
+.ion-android-star, .ion-android-done {
+	color: #aad874;
+}
 
+.filters {
+	font-weight: bold;
+}
 
-
-
+a, a:link, a:visited {
+	color: #aad874;
+	text-decoration: none;
+}

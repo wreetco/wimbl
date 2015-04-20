@@ -43,10 +43,12 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     url: "/browse",
     views: {
       'menuContent': {
-        templateUrl: "templates/browse.html"
+        templateUrl: "templates/browse.html",
+				controller: 'BrowseCtrl'
       }
     }
   })
+	
   .state('app.deals', {
       url: "/deals",
       views: {
@@ -58,10 +60,20 @@ angular.module('starter', ['ionic', 'starter.controllers'])
     })
 
   .state('app.deal', {
-    url: "/deals/:deal_id",
+    url: "/deal/:deal_id",
     views: {
       'menuContent': {
         templateUrl: "templates/deal.html",
+        controller: 'DealCtrl'
+      }
+    }
+  })
+	
+	.state('app.add-deal', {
+    url: "/deals/add",
+    views: {
+      'menuContent': {
+        templateUrl: "templates/add_deal.html",
         controller: 'DealCtrl'
       }
     }
